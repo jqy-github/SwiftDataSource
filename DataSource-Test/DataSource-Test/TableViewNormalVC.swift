@@ -1,5 +1,5 @@
 //
-//  TableViewNormalDataSourceVC.swift
+//  TableViewNormalVC.swift
 //  DataSource-Test
 //
 //  Created by jqy on 2020/11/25.
@@ -7,15 +7,14 @@
 
 import UIKit
 
-class TableViewNormalDataSourceVC: UIViewController {
+class TableViewNormalVC: UIViewController {
 
     var dataSource : TableViewNormalDataSource<CellModel>?
     var tableView  : UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "TableViewSectionHeaderVC"
-        
+    
         tableView = UITableView()
         self.view = tableView
         

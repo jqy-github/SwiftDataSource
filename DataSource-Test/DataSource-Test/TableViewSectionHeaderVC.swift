@@ -12,30 +12,32 @@ import UIKit
 
 class TableViewSectionHeaderVC: UIViewController {
 
-    var dataSourceGrouped1 : TableViewSectionHeaderDataSource<String,[String]>?
-    var dataSourceGrouped2 : TableViewSectionHeaderDataSource<String,SectionModel>?
+    var dataSourceGrouped1 : TableViewGroupedDataSource<String,[String]>?
+    var dataSourceGrouped2 : TableViewGroupedDataSource<String,SectionModel>?
     var tableView : UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "TableViewSectionHeaderVC"
-        
         tableView = UITableView()
         tableView?.rowHeight = 50
         tableView?.sectionHeaderHeight = 60
+        tableView?.sectionFooterHeight = 0
+        if #available(iOS 15.0, *) {
+            tableView?.sectionHeaderTopPadding = 0
+        }
         tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "cell_id")
         tableView?.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: "header_id")
         self.view = tableView
         
-       // self.initDataSourceGrouped1()
+//        self.initDataSourceGrouped1()
           self.initDataSourceGrouped2()
         
     }
     
     func initDataSourceGrouped1() {
         
-        dataSourceGrouped1 = TableViewSectionHeaderDataSource.init(modelStyle: .grouped1(grouped1Data), configureCell: { (table, model, indexPath) -> UITableViewCell in
+        dataSourceGrouped1 = TableViewGroupedDataSource.init(modelStyle: .grouped1(grouped1Data), configureCell: { (table, model, indexPath) -> UITableViewCell in
             let cell = table.dequeueReusableCell(withIdentifier: "cell_id")!
             cell.accessoryType = .disclosureIndicator
             cell.textLabel?.text = model
@@ -50,6 +52,7 @@ class TableViewSectionHeaderVC: UIViewController {
         dataSourceGrouped1?.didSelectRow({[weak self] (table, model, indexPath) in
             let className = "DataSource_Test"+"."+model!
             let vc = (NSClassFromString(className) as! UIViewController.Type).init()
+            vc.navigationItem.title = model
             self?.navigationController?.pushViewController(vc, animated: true)
         })
 
@@ -59,7 +62,7 @@ class TableViewSectionHeaderVC: UIViewController {
     
     func initDataSourceGrouped2() {
         
-        dataSourceGrouped2 = TableViewSectionHeaderDataSource<String,SectionModel>.init(modelStyle: .grouped2(nil, { (table, model, section) -> Int? in
+        dataSourceGrouped2 = TableViewGroupedDataSource<String,SectionModel>.init(modelStyle: .grouped2(nil, { (table, model, section) -> Int? in
             //返回行数
             model?.contents?.count
         }, { (table, model, indexPath) -> String? in
@@ -81,6 +84,7 @@ class TableViewSectionHeaderVC: UIViewController {
         dataSourceGrouped2?.didSelectRow({[weak self] (table, model, indexPath) in
             let className = "DataSource_Test"+"."+model!
             let vc = (NSClassFromString(className) as! UIViewController.Type).init()
+            vc.navigationItem.title = model
             self?.navigationController?.pushViewController(vc, animated: true)
         })
        
@@ -90,21 +94,21 @@ class TableViewSectionHeaderVC: UIViewController {
     }
     
     lazy var grouped1Data = {
-        [["TableViewNormalDataSourceVC",
-          "TableViewSectionFooterDataSourceVC",
-          "TableViewSectionHeaderFooterDataSourceVC"],
-         ["CollectionViewNormalDataSourceVC",
-          "CollectionViewSectionedDataSourceVC"]]
+        [["TableViewNormalVC",
+          "TableViewSectionFooterVC",
+          "TableViewSectionHeaderFooterVC"],
+         ["CollectionViewNormalVC",
+          "CollectionViewSectionedVC"]]
     }()
     
     func loadGrouped2Data() {
         let resources = [["title"   :"UITableViewDataSource",
-                          "contents":["TableViewNormalDataSourceVC",
-                                     "TableViewSectionFooterDataSourceVC",
-                                     "TableViewSectionHeaderFooterDataSourceVC"]],
+                          "contents":["TableViewNormalVC",
+                                     "TableViewSectionFooterVC",
+                                     "TableViewSectionHeaderFooterVC"]],
                          ["title"   :"UICollectionViewDataSource",
-                          "contents":["CollectionViewNormalDataSourceVC",
-                                     "CollectionViewSectionedDataSourceVC"]]]
+                          "contents":["CollectionViewNormalVC",
+                                     "CollectionViewSectionedVC"]]]
         var dataArray = [SectionModel]()
         for resource in resources {
             let model = SectionModel()

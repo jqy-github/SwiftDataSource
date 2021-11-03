@@ -1,5 +1,5 @@
 //
-//  CollectionViewSectionedDataSourceVC.swift
+//  CollectionViewSectionedVC.swift
 //  DataSource-Test
 //
 //  Created by jqy on 2020/11/25.
@@ -7,14 +7,12 @@
 
 import UIKit
 
-class CollectionViewSectionedDataSourceVC: UIViewController {
+class CollectionViewSectionedVC: UIViewController {
 
     var collectionView : UICollectionView?
     var dataSource : CollectionViewSectionedDataSource<UIColor,[UIColor]>?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationItem.title = "CollectionViewSectionedDataSourceVC"
         
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: (UIScreen.main.bounds.size.width/3) - 2, height: UIScreen.main.bounds.size.width/3)

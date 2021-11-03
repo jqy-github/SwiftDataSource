@@ -1,5 +1,5 @@
 //
-//  TableViewSectionFooterDataSourceVC.swift
+//  TableViewSectionFooterVC.swift
 //  DataSource-Test
 //
 //  Created by jqy on 2020/11/25.
@@ -7,25 +7,24 @@
 
 import UIKit
 
-class TableViewSectionFooterDataSourceVC: UIViewController {
+class TableViewSectionFooterVC: UIViewController {
 
-    var dataSource : TableViewSectionFooterDataSource<String,[String]>?
+    var dataSource : TableViewGroupedDataSource<String,[String]>?
     var tableView  : UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationItem.title = "TableViewSectionFooterDataSourceVC"
         
         tableView = UITableView.init(frame: .zero, style: .grouped)
         tableView?.rowHeight = 50
         tableView?.sectionFooterHeight = 60
         tableView?.sectionHeaderHeight = 0
+        tableView?.tableHeaderView = UIView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 0.1))
         tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "cell_id")
         tableView?.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: "footer_id")
         self.view = tableView
         
-        dataSource = TableViewSectionFooterDataSource.init(modelStyle: .grouped1(nil), configureCell: { (table, model, indexPath) -> UITableViewCell in
+        dataSource = TableViewGroupedDataSource.init(modelStyle: .grouped1(nil), configureCell: { (table, model, indexPath) -> UITableViewCell in
             let cell = table.dequeueReusableCell(withIdentifier: "cell_id")!
             cell.textLabel?.text = model
             return cell

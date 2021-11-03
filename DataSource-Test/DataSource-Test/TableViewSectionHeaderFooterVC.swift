@@ -7,15 +7,13 @@
 
 import UIKit
 
-class TableViewSectionHeaderFooterDataSourceVC: UIViewController {
+class TableViewSectionHeaderFooterVC: UIViewController {
 
-    var dataSource : TableViewSectionHeaderFooterDataSource<String,SectionModel>?
+    var dataSource : TableViewGroupedDataSource<String,SectionModel>?
     var tableView  : UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationItem.title = "TableViewSectionHeaderFooterDataSource"
         
         tableView = UITableView.init(frame: .zero, style: .grouped)
         tableView?.rowHeight = 50
@@ -24,7 +22,7 @@ class TableViewSectionHeaderFooterDataSourceVC: UIViewController {
         tableView?.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: "footer_id")
         self.view = tableView
         
-        dataSource = TableViewSectionHeaderFooterDataSource<String,SectionModel>.init(modelStyle: .grouped2(nil, { (table, model, section) -> Int? in
+        dataSource = TableViewGroupedDataSource<String,SectionModel>.init(modelStyle: .grouped2(nil, { (table, model, section) -> Int? in
             model?.contents?.count
         }, { (table, model, indexPath) -> String? in
             model?.contents?[indexPath.row]

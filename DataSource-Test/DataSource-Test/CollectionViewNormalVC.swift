@@ -1,5 +1,5 @@
 //
-//  CollectionViewNormalDataSourceVC.swift
+//  CollectionViewNormalVC.swift
 //  DataSource-Test
 //
 //  Created by jqy on 2020/11/25.
@@ -7,15 +7,13 @@
 
 import UIKit
 
-class CollectionViewNormalDataSourceVC: UIViewController {
+class CollectionViewNormalVC: UIViewController {
 
     var collectionView : UICollectionView?
     var dataSource : CollectionViewNormalDataSource<UIColor>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationItem.title = "CollectionViewNormalDataSourceVC"
         
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 1

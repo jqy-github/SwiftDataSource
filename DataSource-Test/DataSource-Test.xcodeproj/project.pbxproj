@@ -20,17 +20,15 @@
 		6A544A75256DF58A002F0E4D /* CollectionViewDataSourceTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A6A256DF58A002F0E4D /* CollectionViewDataSourceTypealias.swift */; };
 		6A544A76256DF58A002F0E4D /* CollectionViewDataSourceModelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A6B256DF58A002F0E4D /* CollectionViewDataSourceModelStyle.swift */; };
 		6A544A77256DF58A002F0E4D /* TableViewDataSourceModelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A6D256DF58A002F0E4D /* TableViewDataSourceModelStyle.swift */; };
-		6A544A78256DF58A002F0E4D /* TableViewSectionFooterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A6E256DF58A002F0E4D /* TableViewSectionFooterDataSource.swift */; };
 		6A544A79256DF58A002F0E4D /* TableViewNormalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A6F256DF58A002F0E4D /* TableViewNormalDataSource.swift */; };
 		6A544A7A256DF58A002F0E4D /* TableViewDataSourceTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A70256DF58A002F0E4D /* TableViewDataSourceTypealias.swift */; };
-		6A544A7B256DF58A002F0E4D /* TableViewSectionHeaderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A71256DF58A002F0E4D /* TableViewSectionHeaderDataSource.swift */; };
-		6A544A7C256DF58A002F0E4D /* TableViewSectionHeaderFooterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A72256DF58A002F0E4D /* TableViewSectionHeaderFooterDataSource.swift */; };
-		6A544A89256E07B9002F0E4D /* TableViewNormalDataSourceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A88256E07B9002F0E4D /* TableViewNormalDataSourceVC.swift */; };
-		6A544A91256E2C24002F0E4D /* TableViewSectionFooterDataSourceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A90256E2C24002F0E4D /* TableViewSectionFooterDataSourceVC.swift */; };
-		6A544A96256E358E002F0E4D /* TableViewSectionHeaderFooterDataSourceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A95256E358E002F0E4D /* TableViewSectionHeaderFooterDataSourceVC.swift */; };
+		6A544A7C256DF58A002F0E4D /* TableViewGroupedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A72256DF58A002F0E4D /* TableViewGroupedDataSource.swift */; };
+		6A544A89256E07B9002F0E4D /* TableViewNormalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A88256E07B9002F0E4D /* TableViewNormalVC.swift */; };
+		6A544A91256E2C24002F0E4D /* TableViewSectionFooterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A90256E2C24002F0E4D /* TableViewSectionFooterVC.swift */; };
+		6A544A96256E358E002F0E4D /* TableViewSectionHeaderFooterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A95256E358E002F0E4D /* TableViewSectionHeaderFooterVC.swift */; };
 		6A544A9B256E3670002F0E4D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A9A256E3670002F0E4D /* Model.swift */; };
-		6A544AA0256E3B7D002F0E4D /* CollectionViewNormalDataSourceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A9F256E3B7D002F0E4D /* CollectionViewNormalDataSourceVC.swift */; };
-		6A544AA5256E51B0002F0E4D /* CollectionViewSectionedDataSourceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544AA4256E51B0002F0E4D /* CollectionViewSectionedDataSourceVC.swift */; };
+		6A544AA0256E3B7D002F0E4D /* CollectionViewNormalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544A9F256E3B7D002F0E4D /* CollectionViewNormalVC.swift */; };
+		6A544AA5256E51B0002F0E4D /* CollectionViewSectionedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A544AA4256E51B0002F0E4D /* CollectionViewSectionedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,17 +68,15 @@
 		6A544A6A256DF58A002F0E4D /* CollectionViewDataSourceTypealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSourceTypealias.swift; sourceTree = "<group>"; };
 		6A544A6B256DF58A002F0E4D /* CollectionViewDataSourceModelStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSourceModelStyle.swift; sourceTree = "<group>"; };
 		6A544A6D256DF58A002F0E4D /* TableViewDataSourceModelStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceModelStyle.swift; sourceTree = "<group>"; };
-		6A544A6E256DF58A002F0E4D /* TableViewSectionFooterDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSectionFooterDataSource.swift; sourceTree = "<group>"; };
 		6A544A6F256DF58A002F0E4D /* TableViewNormalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewNormalDataSource.swift; sourceTree = "<group>"; };
 		6A544A70256DF58A002F0E4D /* TableViewDataSourceTypealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceTypealias.swift; sourceTree = "<group>"; };
-		6A544A71256DF58A002F0E4D /* TableViewSectionHeaderDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSectionHeaderDataSource.swift; sourceTree = "<group>"; };
-		6A544A72256DF58A002F0E4D /* TableViewSectionHeaderFooterDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSectionHeaderFooterDataSource.swift; sourceTree = "<group>"; };
-		6A544A88256E07B9002F0E4D /* TableViewNormalDataSourceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewNormalDataSourceVC.swift; sourceTree = "<group>"; };
-		6A544A90256E2C24002F0E4D /* TableViewSectionFooterDataSourceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSectionFooterDataSourceVC.swift; sourceTree = "<group>"; };
-		6A544A95256E358E002F0E4D /* TableViewSectionHeaderFooterDataSourceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSectionHeaderFooterDataSourceVC.swift; sourceTree = "<group>"; };
+		6A544A72256DF58A002F0E4D /* TableViewGroupedDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewGroupedDataSource.swift; sourceTree = "<group>"; };
+		6A544A88256E07B9002F0E4D /* TableViewNormalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewNormalVC.swift; sourceTree = "<group>"; };
+		6A544A90256E2C24002F0E4D /* TableViewSectionFooterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSectionFooterVC.swift; sourceTree = "<group>"; };
+		6A544A95256E358E002F0E4D /* TableViewSectionHeaderFooterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSectionHeaderFooterVC.swift; sourceTree = "<group>"; };
 		6A544A9A256E3670002F0E4D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		6A544A9F256E3B7D002F0E4D /* CollectionViewNormalDataSourceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewNormalDataSourceVC.swift; sourceTree = "<group>"; };
-		6A544AA4256E51B0002F0E4D /* CollectionViewSectionedDataSourceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSectionedDataSourceVC.swift; sourceTree = "<group>"; };
+		6A544A9F256E3B7D002F0E4D /* CollectionViewNormalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewNormalVC.swift; sourceTree = "<group>"; };
+		6A544AA4256E51B0002F0E4D /* CollectionViewSectionedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSectionedVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,11 +132,11 @@
 				6A544A35256DF54F002F0E4D /* SceneDelegate.swift */,
 				6A544A9A256E3670002F0E4D /* Model.swift */,
 				6A544A37256DF54F002F0E4D /* TableViewSectionHeaderVC.swift */,
-				6A544A88256E07B9002F0E4D /* TableViewNormalDataSourceVC.swift */,
-				6A544A90256E2C24002F0E4D /* TableViewSectionFooterDataSourceVC.swift */,
-				6A544A95256E358E002F0E4D /* TableViewSectionHeaderFooterDataSourceVC.swift */,
-				6A544A9F256E3B7D002F0E4D /* CollectionViewNormalDataSourceVC.swift */,
-				6A544AA4256E51B0002F0E4D /* CollectionViewSectionedDataSourceVC.swift */,
+				6A544A88256E07B9002F0E4D /* TableViewNormalVC.swift */,
+				6A544A90256E2C24002F0E4D /* TableViewSectionFooterVC.swift */,
+				6A544A95256E358E002F0E4D /* TableViewSectionHeaderFooterVC.swift */,
+				6A544A9F256E3B7D002F0E4D /* CollectionViewNormalVC.swift */,
+				6A544AA4256E51B0002F0E4D /* CollectionViewSectionedVC.swift */,
 				6A544A39256DF54F002F0E4D /* Main.storyboard */,
 				6A544A3C256DF553002F0E4D /* Assets.xcassets */,
 				6A544A3E256DF553002F0E4D /* LaunchScreen.storyboard */,
@@ -193,9 +189,7 @@
 				6A544A70256DF58A002F0E4D /* TableViewDataSourceTypealias.swift */,
 				6A544A6D256DF58A002F0E4D /* TableViewDataSourceModelStyle.swift */,
 				6A544A6F256DF58A002F0E4D /* TableViewNormalDataSource.swift */,
-				6A544A71256DF58A002F0E4D /* TableViewSectionHeaderDataSource.swift */,
-				6A544A6E256DF58A002F0E4D /* TableViewSectionFooterDataSource.swift */,
-				6A544A72256DF58A002F0E4D /* TableViewSectionHeaderFooterDataSource.swift */,
+				6A544A72256DF58A002F0E4D /* TableViewGroupedDataSource.swift */,
 			);
 			path = TableViewDataSource;
 			sourceTree = "<group>";
@@ -334,19 +328,17 @@
 				6A544A74256DF58A002F0E4D /* CollectionViewNormalDataSource.swift in Sources */,
 				6A544A76256DF58A002F0E4D /* CollectionViewDataSourceModelStyle.swift in Sources */,
 				6A544A7A256DF58A002F0E4D /* TableViewDataSourceTypealias.swift in Sources */,
-				6A544A78256DF58A002F0E4D /* TableViewSectionFooterDataSource.swift in Sources */,
-				6A544A7B256DF58A002F0E4D /* TableViewSectionHeaderDataSource.swift in Sources */,
 				6A544A75256DF58A002F0E4D /* CollectionViewDataSourceTypealias.swift in Sources */,
 				6A544A79256DF58A002F0E4D /* TableViewNormalDataSource.swift in Sources */,
 				6A544A34256DF54F002F0E4D /* AppDelegate.swift in Sources */,
-				6A544AA0256E3B7D002F0E4D /* CollectionViewNormalDataSourceVC.swift in Sources */,
-				6A544A7C256DF58A002F0E4D /* TableViewSectionHeaderFooterDataSource.swift in Sources */,
+				6A544AA0256E3B7D002F0E4D /* CollectionViewNormalVC.swift in Sources */,
+				6A544A7C256DF58A002F0E4D /* TableViewGroupedDataSource.swift in Sources */,
 				6A544A9B256E3670002F0E4D /* Model.swift in Sources */,
-				6A544A91256E2C24002F0E4D /* TableViewSectionFooterDataSourceVC.swift in Sources */,
-				6A544AA5256E51B0002F0E4D /* CollectionViewSectionedDataSourceVC.swift in Sources */,
-				6A544A89256E07B9002F0E4D /* TableViewNormalDataSourceVC.swift in Sources */,
+				6A544A91256E2C24002F0E4D /* TableViewSectionFooterVC.swift in Sources */,
+				6A544AA5256E51B0002F0E4D /* CollectionViewSectionedVC.swift in Sources */,
+				6A544A89256E07B9002F0E4D /* TableViewNormalVC.swift in Sources */,
 				6A544A73256DF58A002F0E4D /* CollectionViewSectionedDataSource.swift in Sources */,
-				6A544A96256E358E002F0E4D /* TableViewSectionHeaderFooterDataSourceVC.swift in Sources */,
+				6A544A96256E358E002F0E4D /* TableViewSectionHeaderFooterVC.swift in Sources */,
 				6A544A77256DF58A002F0E4D /* TableViewDataSourceModelStyle.swift in Sources */,
 				6A544A36256DF54F002F0E4D /* SceneDelegate.swift in Sources */,
 			);
