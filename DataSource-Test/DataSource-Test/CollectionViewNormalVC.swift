@@ -2,7 +2,7 @@
 //  CollectionViewNormalVC.swift
 //  DataSource-Test
 //
-//  Created by jqy on 2020/11/25.
+//  Created by JY on 2020/11/25.
 //
 
 import UIKit

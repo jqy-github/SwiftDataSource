@@ -2,13 +2,10 @@
 //  TableViewSectionHeaderVC.swift
 //  DataSource-Test
 //
-//  Created by jqy on 2020/11/25.
+//  Created by JY on 2020/11/25.
 //
 
 import UIKit
-
-
-
 
 class TableViewSectionHeaderVC: UIViewController {
 
@@ -18,7 +15,7 @@ class TableViewSectionHeaderVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.title = "TableViewSectionHeaderVC"
         tableView = UITableView()
         tableView?.rowHeight = 50
         tableView?.sectionHeaderHeight = 60
